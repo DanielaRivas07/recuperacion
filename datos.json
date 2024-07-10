@@ -1,0 +1,94 @@
+[
+      {
+        "id": 1,
+        "nombre": "Pan de molde",
+        "categoria": "dulce",
+        "descripcion": "Pan suave y esponjoso, ideal para sándwiches.",
+        "precio": 2.50,
+        "cantidad": 50,
+        "imagen": "pandemolde.jpg"
+      },
+      {
+        "id": 2,
+        "nombre": "Croissant",
+        "descripcion": "Delicioso croissant francés con una textura crujiente y un sabor mantecoso.",
+        "categoria": "dulce",
+        "precio": 1.20,
+        "cantidad": 30,
+        "imagen": "croissant.jpg"
+      },
+      {
+        "id": 3,
+        "nombre": "Baguette",
+        "descripcion": "Baguette tradicional francesa, crujiente por fuera y suave por dentro.",
+        "categoria": "salado",
+        "precio": 1.80,
+        "cantidad": 20,
+        "imagen":"baguette.jpg"
+      },
+      {
+        "id": 4,
+        "nombre": "Pan Integral",
+        "descripcion": "Pan integral saludable, rico en fibra y perfecto para un desayuno nutritivo.",
+        "categoria": "salado",
+        "precio": 2.00,
+        "cantidad": 40,
+        "imagen": "panintegral.jpg"
+      },
+      {
+        "id": 5,
+        "nombre": "Roll de Canela",
+        "descripcion": "Delicioso y suave rollo de canela con un toque dulce de glaseado, perfecto para acompañar con un café o té en cualquier momento del día.",
+        "categoria": "dulce",
+        "precio": 1.00,
+        "cantidad": 25,
+        "imagen": "rolldecanela.jpg"
+      },
+      {
+        "id": 6,
+        "nombre": "Muffin de chocolate",
+        "descripcion": "Muffin esponjoso relleno de trozos de chocolate, perfecto para los amantes del chocolate.",
+        "categoria": "dulce",
+        "precio": 1.50,
+        "cantidad": 15,
+        "imagen": "muffindechocolate.jpg"
+      },
+      {
+        "id": 7,
+        "nombre": "Pan de centeno",
+        "descripcion": "Pan de centeno oscuro con un sabor fuerte y distintivo, ideal para acompañar con sopas.",
+        "categoria": "salado",
+        "precio": 2.70,
+        "cantidad": 10,
+        "imagen": "pandecenteno.jpg"
+      },
+      {
+        "id": 8,
+        "nombre": "Bollito de leche",
+        "descripcion": "Pequeño bollito suave y dulce, perfecto para la merienda.",
+        "categoria": "dulce",
+        "precio": 0.80,
+        "cantidad": 60,
+        "imagen": "bollitodeleche.jpg"
+      },
+      {
+        "id": 9,
+        "nombre": "Pan de semillas",
+        "descripcion": "Pan nutritivo hecho con una mezcla de semillas, ofreciendo un sabor crujiente y una textura densa. Perfecto para un desayuno saludable o como acompañamiento de tus comidas.",
+        "categoria": "salado",
+        "precio": 3.00,
+        "cantidad": 12,
+        "imagen": "pandesemilla.jpg"
+      },
+      {
+        "id": 10,
+        "nombre": "Pan de ajo",
+        "descripcion": "Pan infundido con ajo y mantequilla, perfecto como acompañamiento para la cena.",
+        "categoria": "salado",
+        "precio": 2.20,
+        "cantidad": 22,
+        "imagen":"pandeajo.jpg"
+      }
+    ]
+  
+  

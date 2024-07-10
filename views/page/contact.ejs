@@ -1,0 +1,22 @@
+<%- include('../partials/head')%> 
+
+
+<section class="contact-section">
+    <h2 class="con">Contacto</h2>
+
+    <form action="" class="contact-form" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea name="message" id="message" rows="4" required></textarea>
+
+        <button>Enviar</button>
+    </form>
+</section>
+
+<%- include('../partials/footer')%>

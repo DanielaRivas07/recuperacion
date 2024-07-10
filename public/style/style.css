@@ -1,0 +1,733 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*Nav*/
+nav{
+    background-color: #170d53;
+    color: white;
+    padding: 30px 0;
+   
+}
+header{
+    padding: 30px 0;
+}
+
+.emoticon{
+    margin-right: 10px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition:  color 0.3s;
+}
+
+nav a:hover{
+    color: #f0cd07;
+}
+
+/*Shop */
+.title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    
+}; 
+
+.product-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.product-card:hover{
+    transform: translateY(-5px);
+}
+
+.product-image{
+   
+    width: 300px;
+    height: 200px; 
+    border-radius: 4px;
+}
+
+.product-card h3{
+    font-size: 15px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.product-card .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e91e63;
+    margin: 10px 0;
+}
+.descripcion{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin: 10px 0;
+    width: 300px;
+}
+
+.boton{
+    margin: auto;
+}
+
+/*ESTILOS DE ABOUT*/
+
+/* Estilos para la sección About */
+.about-section {
+    display: flex; /* Utiliza el modelo de caja flex para la disposición */
+    
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    margin: 50px; /* Añade un margen de 50 píxeles alrededor */
+    box-shadow: #555;
+    border: 3px black solid;
+    border-radius: 20px;
+}
+
+/* .about-section h2 {
+    color: blue; /* Cambia el color del texto del encabezado a azul */
+ */
+
+.about-text {
+    display: flex;
+     /* Establece el ancho máximo del texto a 600 píxeles */
+    margin-right: 20px; /* Añade un margen derecho de 20 píxeles */
+}
+
+.about-image img {
+    max-width: 300px; /* Establece el ancho máximo de la imagen a 300 píxeles */
+    border-radius: 10px; /* Redondea las esquinas de la imagen con un radio de 10 píxeles */
+}
+
+.about-image iframe{
+    border-radius: 20px
+}
+
+
+/* Estilos para la sección Contact */
+.contact-section{
+    background-image: url(https://img.freepik.com/foto-gratis/delicioso-pan-bagels-huevos-sobre-mesa_144627-8661.jpg?t=st=1717605044~exp=1717608644~hmac=bd43fdeb41f826f44e678d0b85506a402a9a00366d7f222b295d821ad899aaa4&w=360);
+    /* nombre de la imagen panaderia.jpg */
+    background-repeat:no-repeat;
+    background-size: 50%;
+}
+
+.con{
+    margin-left: 20%;
+    padding-left: 10px;
+}
+.contact-section {
+    
+    display: flex; /* Utiliza el modelo de caja flex para la disposición */
+    justify-content: center;
+    
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+    margin: auto; /* Añade un margen de 50 píxeles alrededor */
+    margin-top: 5%;
+    border-radius: 10px;
+    border: black 2px solid;
+    box-shadow: 7px 7px 7px black;
+    width: 50%;
+    
+}
+
+.contact-form {
+    display: flex; /* Utiliza el modelo de caja flex para la disposición */
+    justify-content: end;
+
+    flex-direction: column; /* Organiza los elementos en una columna */
+    width: 50%; /* Establece el ancho al 100% del contenedor padre */
+    /* Establece el ancho máximo del formulario a 400 píxeles */
+    margin-left: 50%;
+    padding: 10px;
+}
+
+.contact-form label {
+    margin-top: 10px; /* Añade un margen superior de 10 píxeles */
+    margin-bottom: 5px; /* Añade un margen inferior de 5 píxeles */
+    
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Establece el ancho al 100% del contenedor padre */
+    padding: 5px; /* Añade un relleno de 10 píxeles */
+    
+    margin-bottom: 20px; /* Añade un margen inferior de 20 píxeles */
+    border: 1px solid #ccc; /* Establece un borde de 1 píxel de color gris claro */
+    border-radius: 5px; /* Redondea las esquinas con un radio de 5 píxeles */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total del elemento */
+}
+
+.contact-form button {
+    padding: 5px 10px; /* Añade un relleno de 10 píxeles arriba y abajo, y 20 píxeles a los lados */
+    background-color: #2c98bc; /* Establece el color de fondo a azul */
+    color: white; /* Establece el color del texto a blanco */
+    border: none; /* Elimina cualquier borde */
+    border-radius: 5px; /* Redondea las esquinas con un radio de 5 píxeles */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Establece el tamaño de fuente a 16 píxeles */
+    transition: background-color 0.3s ease; /* Añade una transición suave para el color de fondo */
+    width: 30%;
+    margin: auto;
+}
+
+.contact-form button:hover {
+    background-color: #1267bc; /* Cambia el color de fondo cuando el botón es presionado */
+}
+
+/*LOGIN Y REGISTER*/
+
+.register-section h2{
+    margin-top: 15px;
+}
+
+.end{
+    margin-right: 34%;
+}
+.centrar{
+    margin-right: 26%;
+}
+.register-section{
+    background-image: url(https://img.freepik.com/foto-gratis/delicioso-pan-bagels-huevos-sobre-mesa_144627-8661.jpg?t=st=1717605044~exp=1717608644~hmac=bd43fdeb41f826f44e678d0b85506a402a9a00366d7f222b295d821ad899aaa4&w=360);
+    background-repeat:no-repeat;
+    background-size: 50%;
+
+}
+
+/* Estilos para las secciones de Registro y Login */
+.login-section {
+    
+    display: flex; /* Utiliza el modelo de caja flex para la disposición */
+    justify-content: end;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: end; /* Centra horizontalmente los elementos */
+    margin: auto;
+    margin-top: 8%;
+    border-radius: 10px;
+    border: black 2px solid;
+    box-shadow: 7px 7px 7px black;
+    width: 40%;
+   
+   
+}
+
+.register-section{
+    display: flex; /* Utiliza el modelo de caja flex para la disposición */
+    justify-content: end;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: end; /* Centra horizontalmente los elementos */
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: black 2px solid;
+    box-shadow: 7px 7px 7px black;
+    width: 60%;
+}
+
+.register-form {
+    display: flex;
+    justify-content: end; /* Utiliza el modelo de caja flex para la disposición */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    width: 50%; /* Establece el ancho al 100% del contenedor padre */
+    max-width: 400px;/* Establece el ancho máximo del formulario a 400 píxeles */
+}
+
+.login-form{
+    display: flex; /* Utiliza el modelo de caja flex para la disposición */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    width: 100%; /* Establece el ancho al 100% del contenedor padre */
+    max-width: 400px; /* Establece el ancho máximo del formulario a 400 píxeles */
+
+}
+
+.register-form label{
+    margin-top: 10px; /* Añade un margen superior de 10 píxeles */
+    margin-bottom: 5px; /* Añade un margen inferior de 5 píxeles */
+    
+    
+}
+
+.login-form label{
+    margin-top: 10px; /* Añade un margen superior de 10 píxeles */
+    margin-bottom: 5px; /* Añade un margen inferior de 5 píxeles */
+}
+
+ .login-form input {
+    width: 100%; /* Establece el ancho al 100% del contenedor padre */
+    padding: 5px; /* Añade un relleno de 10 píxeles */
+    margin-bottom: 20px; /* Añade un margen inferior de 20 píxeles */
+    border: 1px solid #ccc; /* Establece un borde de 1 píxel de color gris claro */
+    border-radius: 5px; /* Redondea las esquinas con un radio de 5 píxeles */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total del elemento */
+}
+
+.register-form input{
+    width: 100%; /* Establece el ancho al 100% del contenedor padre */
+    padding: 5px; /* Añade un relleno de 10 píxeles */
+    margin-bottom: 20px; /* Añade un margen inferior de 20 píxeles */
+    border: 1px solid #ccc; /* Establece un borde de 1 píxel de color gris claro */
+    border-radius: 5px; /* Redondea las esquinas con un radio de 5 píxeles */
+    box-sizing: border-box;
+    
+    
+}
+
+
+
+.register-form button, .login-form button {
+    width: 30%;
+    padding: 8px;
+    margin: auto;
+    margin-bottom: 10px;
+    /* padding: 10px 20px; Añade un relleno de 10 píxeles arriba y abajo, y 20 píxeles a los lados */
+    background-color: #2c98bc; /* Establece el color de fondo a verde */
+    color: white; /* Establece el color del texto a blanco */
+    border: none; /* Elimina cualquier borde */
+    border-radius: 5px; /* Redondea las esquinas con un radio de 5 píxeles */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Establece el tamaño de fuente a 16 píxeles */
+    transition: background-color 0.3s ease; /* Añade una transición suave para el color de fondo */
+    box-shadow: 3px 3px 3px black;
+}
+
+
+
+.register-form button:hover, .login-form button:hover {
+    background-color: #1267bc; /* Cambia el color de fondo cuando el botón es presionado */
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #passwordError{
+    color: blue;
+} */
+
+
+
+.banner {
+    width: 100%;
+    height: 600px;
+    /* background-color: #f9e2c7; */
+    background-image: url('https://img.freepik.com/foto-gratis/delicioso-pan-bagels-huevos-sobre-mesa_144627-8669.jpg?t=st=1718333866~exp=1718337466~hmac=b79e35251d11a7e034614ba26aea40f684744d99cdc563d876ad38d47ce5cb9d&w=740'); 
+    
+   
+    background-position: center;
+    background-size: cover;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    text-align: center;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+.text-container {
+    color: #5b342c; 
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+ 
+ .text-container h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    margin: 0;
+}
+
+.text-container h2 {
+    font-size: 36px;
+    margin: 10px 0;
+    /* color: #5b342c; */
+    color: black;
+}
+
+.cta-button {
+    background-color: #f8bcb0;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #f7a59c;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.left {
+    flex: 2;
+    margin-right: 20px;
+
+}
+
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleCarrito{
+    color: #333;
+
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.product img{
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.product-info{
+    flex: 1;
+}
+.product-info h2{
+    font-size: 18px;
+}
+
+.product-controls{
+    display: flex;
+    align-items: center;
+}
+
+.quantity-btn{
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+
+}
+
+.quantity-input{
+   width: 40px;
+   text-align: center;
+   border-radius: 5px;
+}
+
+.price{
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.delete-btn{
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.total-container{
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.total-container p{
+    font-size: 18px;
+    
+}
+
+.buy-btn{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.buy-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/*TABLA */
+/*TABLA*/
+.title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.product-container {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.product-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-container th,
+.product-container td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-container th {
+    background-color: #007BFF;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.product-container tr:hover {
+    background-color: #f1f1f1;
+}
+
+.product-container td button {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.product-container td button:hover {
+    background-color: #0056b3;
+}
+
+.product-container td button a {
+    color: white;
+    text-decoration: none;
+}
+
+.product-container button a {
+    color: white;
+    text-decoration: none;
+}
+
+.product-container button {
+    display: block;
+    width: max-content;
+    margin: 20px auto;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.product-container button:hover {
+    background-color: black;
+}
+
+
+
+
+
+/*Agregar productoss*/
+/*FORMULARIO AGG PRODUCTOS*/
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.form {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    /* Asegura que el padding y el borde se incluyan en el ancho total */
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    align-self: center;
+    width: max-content;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* footer */
+
+footer {
+    background-color: #170d53;
+    color: #ffffff;
+    padding: 30px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-section .social-icons a:hover {
+    color: #f8bcb0;
+}
+
+.footer-bottom {
+    background-color: #231574;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+

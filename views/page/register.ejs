@@ -1,0 +1,26 @@
+<%- include('../partials/head')%>
+
+
+    <section class="register-section">
+
+        <h2 class="end">Registro</h2>
+        <form action="" class="register-form" method="post">
+            <label for="">Nombre de usuario:</label>
+            <input type="text" name="username">
+            <label for="">Email:</label>
+            <input type="email" name="email">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password">
+            <!-- Mensaje de error  -->
+            <p id="passwordError" style="color: red;"></p>
+
+            <label for="">Confirmar contraseña:</label>
+            <input type="password" name="confirm-password">
+
+            <button>Registrar</button>
+            <p>¿Ya tienes cuenta? <a href="/login">Iniciar seccion</a></p>
+        </form>
+    </section>
+    
+    <script src="/validation.js"></script>
+    <%- include('../partials/footer')%>

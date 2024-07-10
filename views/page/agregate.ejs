@@ -1,0 +1,20 @@
+<%- include('../partials/head')%> 
+
+
+<form action="/admin/nuevoproducto" method="post">
+    <label for="">Nombre de producto:</label>
+    <input type="text" name="nombre">
+
+    <label for="">Categoria:</label>
+    <input type="text" name="categoria">
+
+    <label for="">Cantidad:</label>
+    <input type="number" name="cantidad">
+
+    <label for="">Precio</label>
+    <input type="number" name="precio">
+
+    <button>Agregar producto</button>
+</form>
+
+<%- include('../partials/footer')%>
