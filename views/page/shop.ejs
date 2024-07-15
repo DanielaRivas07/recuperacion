@@ -6,11 +6,11 @@
 <div class="product-container">
     <% products.forEach(product => { %>
         <div class="product-card  border border-success  border-opacity-25 rounded shadow  mb-4 bg-body-tertiary rounded">
-            <img src="/images/<%= product.imagen %>" alt="<%= product.nombre_producto %>" class="product-image mb-4">
-            <h2><%= product.nombre_producto %></h2>
-            <p class="descripcion"><%= product.descripcion %></p>
-            <p class="price">Precio: <%= product.precio %></p>
-            <button class="boton"><a href="/productos/carrito/<%= product.id %>">Comprar</a></button>
+            <img src="/images/<%= product.imagen %>" alt="<%= product.nombre %>" class="product-image mb-4">
+            <h2 style="text-align: center;"><%= product.nombre %></h2>
+            <p class="price">Precio: $<%= product.precio %></p>
+            <p class="stock">Stok: <%= product.cantidad %></p>
+            <button class="boto"><a href="/productos/carrito/<%= product.id %>">Comprar</a></button>
         </div>
     <% }); %>
 </div>
